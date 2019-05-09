@@ -13,5 +13,6 @@ end
    room_no = 1
    attendees.collect do |name|
    "Hello, #{name}! You'll be assigned to room #{room_no}!"
+   room_no +=1
  end
  end
