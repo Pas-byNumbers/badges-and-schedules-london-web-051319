@@ -11,8 +11,10 @@ end
  
  def assign_rooms(attendees)
    room_no = 1
+   greet = []
    attendees.collect do |name|
-   "Hello, #{name}! You'll be assigned to room #{room_no}!"
+   greet << "Hello, #{name}! You'll be assigned to room #{room_no}!"
    room_no +=1
  end
+ return greet
  end
